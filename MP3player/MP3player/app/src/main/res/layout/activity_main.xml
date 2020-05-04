@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:text="Select the music by clicking from the list!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="380dp" >
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/PlayButton"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onPlayButtonClick"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <ImageButton
+                android:id="@+id/PauseButton"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onPauseButtonClick"
+                app:srcCompat="@android:drawable/ic_media_pause" />
+
+            <Button
+                android:id="@+id/StopButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onStopButtonClick"
+                android:text="STOP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="175dp"
+                android:layout_height="29dp"
+                android:text="Currently playing"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/Progress"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:text="nth" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="of"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/Duration"
+                android:layout_width="127dp"
+                android:layout_height="26dp"
+                android:layout_weight="1"
+                android:text="nth" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
