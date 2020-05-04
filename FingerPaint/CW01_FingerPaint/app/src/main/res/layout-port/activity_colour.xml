@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColourActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Select your paint colour!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(press the colour button!)" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01_Red" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="onRedClick"
+            android:tint="#FF0000"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02_Green" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:onClick="onGreenClick"
+            android:tint="#00FF00"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/Blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03_Blue" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:onClick="onBlueClick"
+            android:tint="#0000FF"
+            app:srcCompat="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/Yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="04_Yellow" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:onClick="onYellowClick"
+            android:tint="#FFEB3B"
+            app:srcCompat="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05_Black" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:onClick="onBlackClick"
+            app:srcCompat="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="#00FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="==> Your choice is ..."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/currentColour"
+            android:layout_width="193dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="***Press CONFIRM to reflect change!***"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/CONFIRM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onConfirmClick"
+            android:text="CONFIRM" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
