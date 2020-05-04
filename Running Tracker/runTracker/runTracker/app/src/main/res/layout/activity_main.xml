@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/runner" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="#00FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="                Run for Your Life,   Now."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E57373"
+            android:onClick="onAddButtonClick"
+            android:text="Add your run." />
+
+        <Button
+            android:id="@+id/TodayButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFB74D"
+            android:onClick="onTodayButtonClick"
+            android:text="YOUR TODAY" />
+
+        <Button
+            android:id="@+id/TotalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF176"
+            android:onClick="onTotalButtonClick"
+            android:text="YOUR MONTH AND YEAR" />
+
+        <Button
+            android:id="@+id/HistoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AED581"
+            android:onClick="onHistoryButtonClick"
+            android:text="YOUR HISTORY" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

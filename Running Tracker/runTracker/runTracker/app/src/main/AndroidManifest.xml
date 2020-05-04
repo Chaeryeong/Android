@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.runtracker">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.dev.cromer.jason.coverme.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddActivity" />
+        <activity android:name=".StartStopActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".TodayActivity" />
+        <activity android:name=".SingleRecordActivity" />
+        <activity android:name=".AnnotateActivity" />
+        <activity android:name=".MonthYearActivity" />
+        <activity android:name=".TotalActivity" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
+
+        <provider
+            android:name=".myProvider"
+            android:authorities="com.example.runtracker"
+            android:exported="true" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.runtracker.DATE_TODAY" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

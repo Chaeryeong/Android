@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="When are you looking for?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(DO NOT type 0 in front of numbers! e.g. 05(x) -> 5(o))" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/findYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="year"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/findMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="month"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/findDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="day"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        app:srcCompat="@drawable/date" />
+
+    <Button
+        android:id="@+id/FindButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AFDBAF"
+        android:onClick="onFindButtonClick"
+        android:text="LOOK UP or ANNOTATE YOUR RECORD"
+        android:textColor="#036307" />
+
+</LinearLayout>
