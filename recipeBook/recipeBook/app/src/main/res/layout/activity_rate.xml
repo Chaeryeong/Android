@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate the recipe from 0 to 5!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/getRate"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="0-5 only integer"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/rateButton"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:onClick="onRateButtonClick"
+        android:text="confirm" />
+</LinearLayout>
